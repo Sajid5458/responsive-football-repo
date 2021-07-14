@@ -210,6 +210,8 @@ header{
     }
     .fixtures{
         width: 50%;
+        margin: 0;
+        padding: 0;
         height: auto;
         background-size: cover;
     }
