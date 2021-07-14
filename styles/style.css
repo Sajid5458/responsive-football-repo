@@ -209,11 +209,12 @@ header{
         width: 100%;
     }
     .fixtures{
-        width: 50%;
+        width: 100%;
         margin: 0;
         padding: 0;
         height: auto;
         background-size: cover;
+        overflow: hidden;
     }
     .footer-container{
         width: 100%;
@@ -227,6 +228,9 @@ header{
         width: 70%;
     }
 }
+/*-------------------
+ media query
+-------------- */
 /* ------------------
     Tablet Device
 ------------------ */
@@ -258,6 +262,11 @@ header{
     }
     .fixtures{
         width: 100%;
+        margin: 0;
+        padding: 0;
+        height: auto;
+        background-size: cover;
+        overflow: hidden;
     }
     .footer-container{
         width: 100%;
