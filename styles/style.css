@@ -1,0 +1,255 @@
+/* Font Style */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap');
+
+/* ----------------
+    Common Styles
+---------------- */
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+header{
+    background-color: #2D25A0;
+    display: flex;
+    justify-content: center;
+}
+.top-container{
+    width: 1140px;
+}
+.container{
+    width: 1050px;
+}
+/* -------------------
+    Top Bar Styles
+-------------------- */
+.top-bar{   
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 102px;
+    padding-top: 67px;
+    padding-bottom: 86px;
+}
+.top-title{
+    font-size: 64px;
+    font-weight: 700;
+    color: white;
+}
+.link-button{
+    width: 120px;
+    font-size: 16px;
+    background-color: #E02C6D;
+    border: 2px solid #d52062;
+    border-radius: 3px;
+    padding: 10px 24px;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: width 0.6s;
+}
+.link-button:hover{
+    width: 200px;
+}
+.fa-arrow-right.arrow{
+    margin-left: 8px;
+}
+.top-banner img{
+    width: 556px;
+    height: 438px;
+}
+.top-banner:hover img{
+    transform: scale(1.2);
+    transition: transform 0.7s;
+}
+/* -------------------
+    Players style
+------------------- */
+.player-bg{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 27px;
+    margin-top: 70px;
+    margin-bottom: 165px;
+}
+.player{
+    width: 295px;
+    padding: 15px 15px 33px 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.159) ;
+}
+.player img{
+    width: 100%;
+}
+.player-name{
+    color: #18191F;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+.player-info{
+    color: #6C6C6C;
+    font-size: 16px;
+    line-height: 26px;
+}
+/* -------------------
+    fixtures style
+------------------- */
+.fixtures{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.fixtures-container{
+    background-image: linear-gradient(rgba(19, 19, 19, 0.481), rgba(0, 0, 0, 0.755));
+    width: 1050px;
+    color: white;
+    
+}
+.fixtures-padding{
+    margin: 30px 100px;
+    padding-bottom: 70px;
+}
+.fixtures-heading{
+    display: flex;
+    justify-content: space-between;
+}
+.fixture-left, .fixture-name{
+    font-size: 35px;
+    color: white;
+}
+.fixture-title{
+    font-size: 45px;
+    color: rgba(160, 187, 228, 0.7);
+    text-align: center;
+}
+.fixture-content{
+    display: flex;
+    justify-content: center;
+    border-bottom: 3px solid rgba(245, 222, 179, 0.563);
+}
+.fixture-content h2{
+    font-size: 27px;
+    color: white;
+}
+.middle-content{
+    padding: 0px 40px;
+    display: inline-block;
+}
+/* -------------------
+    Footer Style
+------------------- */
+.footer-container{  
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-logo img{
+    width: 480px;
+    height: 110px;
+}
+.social-icon{
+    color: #969BAB;
+    font-size: 19px;
+    margin-right: 17px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #7c7d822a;
+}
+.footer-icons{
+    margin-top: 25px;
+}
+.copyright{
+    color: #000000;
+    font-size: 20px;
+}
+/* ----------------
+    Media Query
+---------------- */
+/* ----------------
+    Mobile Device
+---------------- */
+@media only screen and (max-width:688px) {
+    
+    .top-bar, .players{
+         grid-template-columns: repeat(1, 1fr);
+         grid-gap: 0;
+    }
+    .top-title{
+        font-size: 36px;
+    }
+    .top-container, .container{
+        width: 100%;
+        padding: 15px;
+    }
+    .top-banner{
+        margin-top: 60px;
+    }
+    .top-banner img {
+        width: 100%;
+        height: auto;
+    }
+    .players{
+        margin-top: 40px;
+        margin-bottom: 60px;
+    }
+    .player{
+        width: 92%;
+        margin-bottom: 24px;    
+    }
+    .player-image {
+        width: 100%;
+    }
+    .footer-container{
+        width: 100%;
+        padding-bottom: 150px;
+    }
+    .footer-logo{
+        display: flex;
+        justify-content: center;
+    }
+    .footer-logo img{
+        width: 70%;
+    }
+}
+/* ------------------
+    Tablet Device
+------------------ */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .top-bar{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .top-container{
+        width: 100%;
+        padding: 25px;
+    }
+    .top-banner{
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+    }
+    .top-banner img{
+        width: 80%;
+        height: auto;
+    }
+    .container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+    .footer-container{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}
