@@ -47,7 +47,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: transform 0.6s;
+    transition: background-color 0.6s, color 0.6s;
 }
 .link-button:hover{
     background-color: white;
@@ -209,7 +209,7 @@ header{
         width: 100%;
     }
     .fixtures{
-        width: 100%;
+        width: 50%;
         height: auto;
         background-size: cover;
     }
